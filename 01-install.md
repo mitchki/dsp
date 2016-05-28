@@ -53,6 +53,7 @@ I have both Python 2 and 3 installed.  Because I wasn't sure which I'd need.
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
 import platform
+
 platform.python_version()
 
  
