@@ -21,14 +21,22 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What do the following commands do:  
 `ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+  List  information  about  the FILEs (the current directory by default).
+       Sort entries alphabetically if none of -cftuvSUX nor --sort  is  speci‐
+       fied.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -a`  
+       -a, --all
+              do not ignore entries starting with .
+
+`ls -l`   -l     use a long listing format
+
+`ls -lh`   -h, --human-readable
+              with -l and/or -s, print human readable sizes (e.g., 1K 234M 2G)
+
+`ls -lah`  List files, use long listing format, include entries starting with a .
+`ls -t`    list files, sort by modification time, newest first
+`ls -Glp`  list files, apend group names, use long listing format, append / for directories
 
 ---
 
