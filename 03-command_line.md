@@ -34,8 +34,11 @@ What do the following commands do:
 `ls -lh`   -h, --human-readable
               with -l and/or -s, print human readable sizes (e.g., 1K 234M 2G)
 
+
 `ls -lah`  List files, use long listing format, include entries starting with a .
+
 `ls -t`    list files, sort by modification time, newest first
+
 `ls -Glp`  list files, apend group names, use long listing format, append / for directories
 
 ---
