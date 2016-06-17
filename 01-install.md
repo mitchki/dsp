@@ -46,7 +46,9 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
-I have both Python 2 and 3 installed.  Because I wasn't sure which I'd need.
+I have both Python 2 and 3 installed.  Because I wasn't sure which I'd need. -- that was on my Windows machine
+On my new ubuntu box, I have Python 2.7.11
+
 
 ###Q2. Which Python Version Installed   
 
