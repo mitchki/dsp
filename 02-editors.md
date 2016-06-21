@@ -68,12 +68,12 @@ emacs - it seems to be more advanced, and on a powerful machine, won't be apprec
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
 sublime - it was the default for the d3 class, and I really enjoyed using it.
-<ctrl><shift>P to access the command pallette
-<ctrl>o open file
-<ctrl>z undo
-<ctrl>n new file
-<ctrl><shift>n new window
-<ctrl>q quit
+'<ctrl><shift>P to access the command pallette
+'<ctrl>o open file
+'<ctrl>z undo
+'<ctrl>n new file
+'<ctrl><shift>n new window
+'<ctrl>q quit
 
 Sublime is configured via editing text files..
 
