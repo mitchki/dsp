@@ -69,10 +69,16 @@ What graphical editor will you use? How did you make your decision? What are som
 
 sublime - it was the default for the d3 class, and I really enjoyed using it.
 ctrl-shift-P to access the command pallette
+
+
 ctrl-o open file
+
 ctrl-z undo
+
 ctrl-n new file
+
 ctrl-shift-n new window
+
 ctrl-q quit
 
 Sublime is configured via editing text files..
