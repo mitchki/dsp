@@ -13,16 +13,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-`touch filename`  creates a new blank file  
+`touch filename`   creates a new blank file  
 `pwd`             display the path to the working directory  
 `pushd`, `popd`   move to a new directory with pushd, then 'pop' back with popd  
 `less`, `more`    display a file, one page at a time.  Spacebar to move a page, `q` to quit.  
 `cat`             stream a file   
 `|`               'pipes' the results from the left command into the command on the right  
-`>`              redirects the output from the left of the > to the file on the right  
-`>>`             appends the output from the left of the > to the file on the right  
+`>`               redirects the output from the left of the > to the file on the right  
+`>>`              appends the output from the left of the > to the file on the right  
 `find`            find a file on the drive  
-`grep`           find a string in a file or in multiple files  
+`grep`            find a string in a file or in multiple files  
 
 
 
