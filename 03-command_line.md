@@ -47,7 +47,13 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+ls -R   Recursive. Also list files in subdirectories.
+ls -d   List only directories
+ls -o   Displays the long format listing, but excludes group name.
+ls -b   Displays non-printing characters in octal
+ls -L   Displays the file or directory referenced by a symbolic link.
+
+
 
 ---
 
@@ -55,7 +61,14 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs is used to build and run a command line using standard input.  Many key linux commands (like awk and grep) will take the standard input as a parameter by using a pipe.
+
+Example:
+echo a b c d e f| xargs -p -n 3
+/bin/echo a b c ?...y
+/bin/echo d e f ?...a b c
+y
+d e f
 
  
 
