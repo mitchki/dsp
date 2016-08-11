@@ -47,15 +47,15 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-'ls -R'   Recursive. Also list files in subdirectories.
+`ls -R`   Recursive. Also list files in subdirectories.
 
-'ls -d'   List only directories
+`ls -d`   List only directories
 
-'ls -o'   Displays the long format listing, but excludes group name.
+`ls -o`   Displays the long format listing, but excludes group name.
 
-'ls -b'   Displays non-printing characters in octal
+`ls -b`   Displays non-printing characters in octal
 
-'ls -L'   Displays the file or directory referenced by a symbolic link.
+`ls -L`   Displays the file or directory referenced by a symbolic link.
 
 
 
@@ -69,15 +69,15 @@ xargs is used to build and run a command line using standard input.  Many key li
 
 Example:
 
-'echo a b c d e f| xargs -p -n 3
+`echo a b c d e f| xargs -p -n 3`
 
-/bin/echo a b c ?...y
+`/bin/echo a b c ?...y`
 
-/bin/echo d e f ?...a b c
+`/bin/echo d e f ?...a b c`
 
-y
+`y`
 
-d e f'
+`d e f`
 
 
  
