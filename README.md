@@ -11,7 +11,8 @@ Metis data science bootcamp. Students should budget **60+ hours** to complete th
  
  Step 1. [Install software on your computer](01-install.md)
  
- Step 2. [Choose and learn your editor(s)](02-editors.md)
+ Step 2. [Choose and learn your editor(s)](02-editors.md)  
+    Figure out how to call sublime from the command line.
  
  Step 3. [Learn command line](03-command_line.md)  
  
