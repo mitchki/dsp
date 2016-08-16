@@ -12,7 +12,14 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>>Both are a list of numbers,that can be referred to via an index value starting at zero.  
+
+>>Though tuples may seem similar to lists, they are often used in different situations and for different purposes. Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of namedtuples). Tuples can be accessed either by index or by named keys (in which case they're named tuples.)
+
+>>Lists are mutable (changeable), and their elements are usually homogeneous and are accessed by iterating over the list.  
+>>Lists are represented in square brackets, tuples in parentheses.
+
+>>Named tuples will work as keys in dictionaries as their elements are associated by name with each entry.
 
 ---
 
