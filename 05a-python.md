@@ -14,7 +14,7 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 >>Both are a list of numbers,that can be referred to via an index value starting at zero.  
 
->>Though tuples may seem similar to lists, they are often used in different situations and for different purposes. Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of namedtuples). Tuples can be accessed either by index or by named keys (in which case they're named tuples.)
+>>Though tuples may seem similar to lists, they are often used in different situations and for different purposes. Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing (or even by attribute in the case of namedtuples). Tuples can be accessed either by index or by named keys (in which case they're named tuples.) Since lists can only be accessed via numbered indexes, they are not good as keys for dictionaries.
 
 >>Lists are mutable (changeable), and their elements are usually homogeneous and are accessed by iterating over the list.  
 >>Lists are represented in square brackets, tuples in parentheses.
@@ -27,7 +27,18 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Sets contain only unique elements and their elements are immutable.  Lists are changeable (not immutable) and may contain duplicates.
+
+Example list: ` cities = ["London", "New York", "Raleigh", "London", "Miami" ]`
+
+Example set:  ` cities = {"London", "New York", "Raleigh"}`
+
+Membership testing in a set is vastly faster, especially for large sets. That is because the set uses a hash function to map to a bucket. Since Python implementations automatically resize that hash table, the speed can be constant (O(1)) no matter the size of the set (assuming the hash function is sufficiently good).
+
+In contrast, to evaluate whether an object is a member of a list, Python has to compare every single member for equality, i.e. the test is O(n).
+
+
+
 
 ---
 
@@ -35,15 +46,39 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is a construct in python that creates an anonymous function.  It can be used anywhere you need a simple function that will not be reused (and therefore doesn't need a name.)
 
+```
+>>> words = "This is my list of words for the sorted and lambda exercise".split()
+>>> words
+['This', 'is', 'my', 'list', 'of', 'words', 'for', 'the', 'sorted', 'and', 'lambda', 'exercise']
+>>> sorted(words, key = lambda l: len(l))
+['is', 'my', 'of', 'for', 'the', 'and', 'This', 'list', 'words', 'sorted', 'lambda', 'exercise']
+```
 ---
 
 ###Q4. List Comprehension, Map &amp; Filter
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions use 'for' and/or  'if' statements to build a list. 
+```
+>>> words = "This is my list of words for the list comprehension exercise".split()
+>>> words
+['This', 'is', 'my', 'list', 'of', 'words', 'for', 'the', 'list', 'comprehension', 'exercise']
+>>> stuff = [[w.upper(), w.lower(), len(w)] for w in words]
+>>> stuff
+[['THIS', 'this', 4], ['IS', 'is', 2], ['MY', 'my', 2], ['LIST', 'list', 4], ['OF', 'of', 2], ['WORDS', 'words', 5], ['FOR', 'for', 3], ['THE', 'the', 3], ['LIST', 'list', 4], ['COMPREHENSION', 'comprehension', 13], ['EXERCISE', 'exercise', 8]]
+
+>>> stuff2 = [[w.upper(), w.lower(), len(w)] for w in words if len(w) > 2]
+>>> stuff2
+[['THIS', 'this', 4], ['LIST', 'list', 4], ['WORDS', 'words', 5], ['FOR', 'for', 3], ['THE', 'the', 3], ['LIST', 'list', 4], ['COMPREHENSION', 'comprehension', 13], ['EXERCISE', 'exercise', 8]]
+
+
+``` 
+The above examples use list comprehension to build lists of lists, each sublist with 2 string elements and an integer.
+
+
 
 ---
 
