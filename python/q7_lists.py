@@ -15,6 +15,15 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
+    c = 0
+
+    for word in words:
+        if len(word) > 1 and (word[0] == word[len(word)-1]):
+            c += 1
+
+    return c
+
+
     raise NotImplementedError
 
 
