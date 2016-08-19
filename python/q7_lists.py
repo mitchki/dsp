@@ -41,6 +41,10 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    x_start = filter(lambda x: x[0] == 'x' , words)
+    other_start = filter(lambda x: x[0] != 'x' , words)
+    return sorted(x_start) + sorted(other_start)
+
     raise NotImplementedError
 
 
@@ -58,6 +62,8 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
+    return sorted(tuples, key = lambda x: x[-1])
+    
     raise NotImplementedError
 
 
@@ -77,6 +83,16 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    l = []
+    
+    for i in range(0, len(nums)-1):
+        if nums[i] != nums[i+1]:
+            l.append(nums[i])
+
+    if len(nums) > 0:
+        l.append(nums[-1])
+    return l
+
     raise NotImplementedError
 
 
@@ -94,4 +110,26 @@ def linear_merge(list1, list2):
     >>> linear_merge(['aa', 'aa'], ['aa', 'bb', 'bb'])
     ['aa', 'aa', 'aa', 'bb', 'bb']
     """
+    merged = []
+    i1 = 0
+    i2 = 0
+    while i1 < len(list1) or i2 < len(list2):
+        if i1 < len(list1) and i2 < len(list2):
+            if list1[i1] <= list2[i2]:
+                merged.append(list1[i1])
+                i1 += 1
+            else:
+                merged.append(list2[i2])
+                i2 += 1
+        elif i1 < len(list1):
+            merged.append(list1[i1])
+            i1 += 1
+        else:
+            merged.append(list2[i2])
+            i2 += 1
+
+        #print merged
+    
+    return merged
+
     raise NotImplementedError
