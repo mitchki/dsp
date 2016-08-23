@@ -73,10 +73,29 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 >>> stuff2 = [[w.upper(), w.lower(), len(w)] for w in words if len(w) > 2]
 >>> stuff2
 [['THIS', 'this', 4], ['LIST', 'list', 4], ['WORDS', 'words', 5], ['FOR', 'for', 3], ['THE', 'the', 3], ['LIST', 'list', 4], ['COMPREHENSION', 'comprehension', 13], ['EXERCISE', 'exercise', 8]]
+```
 
-
+First the map function, then the same with list comprehension
 ``` 
-The above examples use list comprehension to build lists of lists, each sublist with 2 string elements and an integer.
+>>> print words
+['This', 'is', 'my', 'list', 'of', 'words', 'for', 'the', 'list', 'comprehension', 'exercise']
+>>> map(len,words)
+[4, 2, 2, 4, 2, 5, 3, 3, 4, 13, 8]
+>>> # list comprehension
+>>> [len(w) for w in words]
+[4, 2, 2, 4, 2, 5, 3, 3, 4, 13, 8]
+
+```
+
+First the filter function, then the same with list comprehension
+```
+>>> filter(lambda x: len(x) >2 , words)
+['This', 'list', 'words', 'for', 'the', 'list', 'comprehension', 'exercise']
+>>> 
+>>> [w for w in words if len(w) > 2]
+['This', 'list', 'words', 'for', 'the', 'list', 'comprehension', 'exercise']
+>>> 
+```
 
 
 
