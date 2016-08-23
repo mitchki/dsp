@@ -23,7 +23,7 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 frequencies are as listed below:  
 Degree  	|Frequency  
-----------|--------    
+------------|--------    
 MD			|1    
 MA			|1    
 ScD 		|6    
@@ -39,9 +39,9 @@ JD			|1
 ####Q2. Find how many different titles there are, and their frequencies:  Ex:  Assistant Professor, Professor
 
 >> Titles and frequencies are listed below:  
-Assistant Professor 12  
-Professor 13  
-Associate Professor 12  
+12 Assistant Professor   
+13 Professor   
+12 Associate Professor   
 
 
 
