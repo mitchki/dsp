@@ -22,17 +22,17 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 >> There are 9 different degrees if you count '0' as a degree.  
 
 frequencies are as listed below:  
-|Degree  	|Frequency|  
-|----------|--------|    
-|MD			|1  |  
-|MA			|1  |  
-|ScD 		|6  |  
-|BSEd 		|1  |  
-|PhD 		|31  |  
-|0 			|1  |  
-|MPH 		|2  |  
-|MS			|2  |  
-|JD			|1  |  
+Degree  	|Frequency  
+----------|--------    
+MD			|1    
+MA			|1    
+ScD 		|6    
+BSEd 		|1    
+PhD 		|31    
+0 			|1    
+MPH 		|2    
+MS			|2    
+JD			|1    
 
 
 
