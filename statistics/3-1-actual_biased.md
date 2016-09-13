@@ -8,11 +8,9 @@ Now compute the biased distribution we would see if we surveyed the children and
 Plot the actual and biased distributions, and compute their means. As a
 starting place, you can use chap03ex.ipynb.  
 
-![Figure 1-1](https://raw.github.com/username/repo/master/images/figure 1-1.png "Figure 1-1")
 
-
->> Mean of unbiased distribution: 1.02
->> Mean of biased distribution (as if children were surveyed): 2.04
+>> Mean of unbiased distribution: 1.02   
+>> Mean of biased distribution (as if children were surveyed): 2.04  
 
 >> Plots and python code are in the file https://github.com/mitchki/dsp/blob/master/statistics/ch3_exercise_1.ipynb  
 
