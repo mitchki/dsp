@@ -10,22 +10,24 @@
   
 ###  Python code below:   
 --------------------------------------------------------------  
+```
+from scipy.stats import norm  
 
->> from scipy.stats import norm
->> 
->> h_mean_in = 178 * 0.393701
->> h_std_in = 7.7 * 0.393701
->> print h_mean_in 
->> print h_std_in 
+h_mean_in = 178 * 0.393701  
+h_std_in = 7.7 * 0.393701  
+print h_mean_in   
+print h_std_in   
 
->> blue_min = (5 * 12) + 10
->> blue_max = (6 * 12) + 1
-
->> propMenUnderMax = norm.cdf(blue_max,h_mean_in,h_std_in)
->> propMenUnderMin = norm.cdf(blue_min,h_mean_in,h_std_in)
->> eligible = propMenUnderMax - propMenUnderMin
+blue_min = (5 * 12) + 10  
+blue_max = (6 * 12) + 1  
+  
+propMenUnderMax = norm.cdf(blue_max,h_mean_in,h_std_in)  
+propMenUnderMin = norm.cdf(blue_min,h_mean_in,h_std_in)  
+eligible = propMenUnderMax - propMenUnderMin  
     
->> print propMenUnderMax 
->> print propMenUnderMin 
->> print 'proportion of men whose height is eligible for blue men:'
->> print eligible
+print propMenUnderMax   
+print propMenUnderMin   
+print 'proportion of men whose height is eligible for blue men:'  
+print eligible  
+
+```
