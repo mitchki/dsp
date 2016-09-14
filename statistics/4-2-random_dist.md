@@ -5,4 +5,8 @@
 
 
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Yes, the numbers certainly seem to be uniform!  
+
+>> Please find the python code and plots for this result at this jupyter url:  
+>>  https://github.com/mitchki/dsp/blob/master/statistics/Chap4Question2.ipynb  
+
