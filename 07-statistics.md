@@ -74,7 +74,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> p(A\B) = (P(A) * P(B/A)) / P(B)
 
->> So A = Probability that Elvis is an identical twin = 0.2941
+>> So A = Probability that Elvis is an identical twin = 0.2941 = 5/17
 
 Python code below:
 ```
@@ -104,7 +104,19 @@ print result
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> After reading several versions of the difference in reasoning, I find the following explanation most persuasive:
+>>
+>> I would not frame the difference in those terms. Frequentists and Bayesians both rely on probability models with unknown parameters for inference. Frequentists believe the parameters to be fixed constants, but unknown to the statistician. Inference involves making a probability statement about the relationship between the parameter estimate and the true value.  
+>>  
+>> Bayesians, on the other hand, ascribe probability models to both the parameters and the data. Inference involves updating the distribution on the parameters (the prior), in light of the data.  
+>>  
+>> Another difference is that frequentists take into consideration the sampling scheme used to get the data, whereas Bayesian inference follows the strong likelihood principle (all inference takes place through the likelihood function).  
+>>  
+>> Both frequentists and Bayesians take the world as they find it, in the sense that they accept the data as data (facts). They differ in their interpretation of the parameters. If statisticians were philosophers, frequentists would be Platonists and Bayesians would be subjectivists.   
+>>
+>> Reference: http://stats.stackexchange.com/questions/180747/bayesian-vs-frequentist-view  
+>> Author: http://stats.stackexchange.com/users/14188/placidia  
+>>  
 
 ---
 
